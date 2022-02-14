@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="225" id="KGk-i7-Jjw" customClass="HeaderTableViewCell" customModule="DoggoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="442" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="442" height="225"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breed Name:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRs-f1-KTz">
+                        <rect key="frame" x="16" y="16" width="103" height="35.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="103" id="ErW-66-Hby"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example Breed Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ad8-7t-PYF">
+                        <rect key="frame" x="135" y="23.5" width="307" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub-breeds:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2h-Nr-CMc">
+                        <rect key="frame" x="16" y="67.5" width="99.5" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="99.5" id="6dZ-qn-w0j"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Example sub-breed, Example sub-breed, Example sub-breed, Example sub-breed, Example sub-breed, Example sub-breed,  " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vi9-3G-0T4">
+                        <rect key="frame" x="135" y="67.5" width="307" height="81.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaP-jz-rbP">
+                        <rect key="frame" x="32" y="165" width="378" height="44"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="UDy-Np-M2E"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Favorite"/>
+                        <connections>
+                            <action selector="favoriteButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="n0c-Tx-UwJ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ad8-7t-PYF" secondAttribute="trailing" id="7oc-Bg-Wt4"/>
+                    <constraint firstAttribute="bottom" secondItem="uaP-jz-rbP" secondAttribute="bottom" constant="16" id="ISJ-K0-VdM"/>
+                    <constraint firstItem="ad8-7t-PYF" firstAttribute="centerY" secondItem="HRs-f1-KTz" secondAttribute="centerY" id="NVn-tR-czB"/>
+                    <constraint firstItem="ad8-7t-PYF" firstAttribute="leading" secondItem="HRs-f1-KTz" secondAttribute="trailing" constant="16" id="OKd-QC-gml"/>
+                    <constraint firstItem="s2h-Nr-CMc" firstAttribute="leading" secondItem="HRs-f1-KTz" secondAttribute="leading" id="RA9-c9-yR8"/>
+                    <constraint firstItem="HRs-f1-KTz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="UQo-Te-jFs"/>
+                    <constraint firstAttribute="trailing" secondItem="uaP-jz-rbP" secondAttribute="trailing" constant="32" id="etI-hZ-rte"/>
+                    <constraint firstItem="uaP-jz-rbP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="ihi-Yk-4IB"/>
+                    <constraint firstItem="s2h-Nr-CMc" firstAttribute="top" secondItem="HRs-f1-KTz" secondAttribute="bottom" constant="16" id="lFf-9s-HXS"/>
+                    <constraint firstItem="vi9-3G-0T4" firstAttribute="top" secondItem="s2h-Nr-CMc" secondAttribute="top" id="lPt-BM-sXr"/>
+                    <constraint firstItem="uaP-jz-rbP" firstAttribute="top" secondItem="vi9-3G-0T4" secondAttribute="bottom" constant="16" id="muc-4p-rIb"/>
+                    <constraint firstItem="uaP-jz-rbP" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="nIa-mk-4lg"/>
+                    <constraint firstAttribute="trailing" secondItem="vi9-3G-0T4" secondAttribute="trailing" id="rHL-qp-wOw"/>
+                    <constraint firstItem="vi9-3G-0T4" firstAttribute="leading" secondItem="s2h-Nr-CMc" secondAttribute="trailing" constant="19.5" id="uRd-XJ-7yq"/>
+                    <constraint firstItem="HRs-f1-KTz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vO6-2l-jTF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dogBreedName" destination="ad8-7t-PYF" id="z4g-UR-2N0"/>
+                <outlet property="dogSubBreeds" destination="vi9-3G-0T4" id="G51-fD-bWQ"/>
+                <outlet property="favoriteButton" destination="uaP-jz-rbP" id="NZq-IL-0wr"/>
+            </connections>
+            <point key="canvasLocation" x="220.28985507246378" y="150.33482142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
