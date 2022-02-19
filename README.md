@@ -1,4 +1,4 @@
-# DoggoApp
+# Example MVP App
 
 This app fetches dog breeds from https://dog.ceo/dog-api/documentation/ and displays them using a TableView. It uses an **MVP** pattern and focuses on TDD. User is able to browse a list of breeds and see them in more detail by selecting them. Inside the detail section they are also able to see images as well as the ability to favorite a breed. 
 
